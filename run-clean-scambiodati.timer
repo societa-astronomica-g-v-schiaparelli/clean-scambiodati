@@ -1,0 +1,8 @@
+[Unit]
+Description=Periodically clean the scanbio dati directory
+
+[Timer]
+OnCalendar=*-*-* 14:30:00
+
+[Install]
+WantedBy=multi-user.target

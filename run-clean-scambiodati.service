@@ -1,0 +1,6 @@
+[Unit]
+Description=Periodically clean the scambio dati directory
+
+[Service]
+ExecStart=/usr/bin/docker run --rm -v /media/scambio_dati:/data clean-scambiodati
+Type=oneshot
